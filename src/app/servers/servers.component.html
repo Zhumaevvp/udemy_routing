@@ -2,13 +2,8 @@
   <div class="col-xs-12 col-sm-4">
     <div class="list-group">
       <a
-<<<<<<< HEAD
-        [routerLink]="['/servers', 5, 'edit']"
-        [queryParams]="{allowEdit: '1'}"
-=======
         [routerLink]="['/servers', server.id]"
         [queryParams]="{allowEdit: server.id === 3 ? '1' : '0'}"
->>>>>>> e9a28f20040425972018aacc3fa7f3de1f0a69ad
         fragment="loading"
         href="#"
         class="list-group-item"
@@ -18,12 +13,8 @@
     </div>
   </div>
   <div class="col-xs-12 col-sm-4">
-<<<<<<< HEAD
-    <button class="btn btn-primary" (click)="onReload()">Reload Page</button>
-=======
     <router-outlet></router-outlet>
     <!-- <button class="btn btn-primary" (click)="onReload()">Reload Page</button>
->>>>>>> e9a28f20040425972018aacc3fa7f3de1f0a69ad
     <app-edit-server></app-edit-server>
     <hr>
     <app-server></app-server> -->
